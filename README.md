@@ -1,0 +1,1 @@
+# 932404.ipatov.vladsilav.lab1
