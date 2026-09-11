@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>О себе</title>
+<style>
+  main {
+    display: flex;
+    gap: 10px;
+  }
+/* фон */
+  body {
+    background-color: #2e1a47;
+    color: #e0d9f5;
+    font-family: Arial, sans-serif;
+  }
+/* цвет заголовков */
+  h1, h2 {
+    color: #39ff14;
+  }
+/* рамка и отступы для секций и боковой панели */
+  section, aside {
+    border: 1px solid #d946ef;
+    padding: 10px;
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ипатов Владислав</h1>
+  <p>Геймер и разработчик игр</p>
+</header>
+
+<main>
+<!-- выделяем основу в блок, чтобы aside встал сбоку -->
+  <div>
+    <img src="avatar.jpg" alt="Портрет" width="368" height="543">
+
+    <section>
+      <h2>Навыки</h2>
+      <ol>
+        <li>Алгоритмы и структуры данных</li>
+        <li>Работа с различными игровыми движками</li>
+        <li>Знание основ гейм-дизайна</li>
+        <li>Опыт работы с C#</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Проекты</h2>
+      <ol>
+        <li>Разработка модификаций к игре Terraria</li>
+        <li>Roguelike-платформер</li>
+        <li>Многопользовательские RTS</li>
+      </ol>
+    </section>
+    
+    <section>
+      <h2>Обратная связь</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Ваше имя"><br><br>
+        <input type="email" name="email" placeholder="Ваш email"><br><br>
+        <textarea name="message" placeholder="Ваше сообщение" rows="4" cols="30"></textarea><br><br>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+  </div>
+
+  <aside>
+    <h2>Обо мне</h2>
+    <p>Любимая платформа: ПК</p>
+    <p>Любимые технологии: Unity, C#</p>
+  </aside>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Myat_Boshki</p>
+</footer>
+
+</body>
+</html>
