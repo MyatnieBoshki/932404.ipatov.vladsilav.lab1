@@ -5,6 +5,14 @@
 <title>О себе</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<style>
+  /* доработка textarea */
+  textarea {
+    padding: 12px;
+    resize: vertical;
+  }
+
+</style>
 <body>
 
 <header>
@@ -13,18 +21,26 @@
 </header>
 
 <main>
-<!-- выделяем основу в блок, чтобы aside встал сбоку -->
   <div>
     <img src="avatar.jpg" alt="Портрет" width="368" height="543">
 
     <section>
       <h2>Навыки</h2>
-      <ul>
-        <li>Алгоритмы и структуры данных</li>
-        <li>Работа с различными игровыми движками</li>
-        <li>Знание основ гейм-дизайна</li>
-        <li>Опыт работы с C#</li>
-      </ul>
+<!-- список заменён на карточки -->
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>Разработка модификаций к игре Terraria</h3>
+          <p>Кастомные предметы, боссы и механики для игрового движка Terraria.</p> <!-- NEW -->
+        </div>
+        <div class="project-card">
+          <h3>Roguelike-платформер</h3>
+          <p>Процедурная генерация уровней и система перманентной смерти.</p> <!-- NEW -->
+        </div>
+        <div class="project-card">
+          <h3>Многопользовательские RTS</h3>
+          <p>Сетевая синхронизация юнитов и стратегический ИИ противника.</p> <!-- NEW -->
+        </div>
+      </div>
     </section>
 
     <section>
@@ -41,7 +57,8 @@
       <form action="#" method="post">
         <input type="text" name="name" placeholder="Ваше имя"><br><br>
         <input type="email" name="email" placeholder="Ваш email"><br><br>
-        <textarea name="message" placeholder="Ваше сообщение" rows="4" cols="30"></textarea><br><br>
+        <!-- добавлен inline стиль с text transform: uppercase -->
+        <textarea name="message" placeholder="Ваше сообщение" rows="4" cols="30"></textarea><br><br> 
         <button type="submit">Отправить</button>
       </form>
     </section>
