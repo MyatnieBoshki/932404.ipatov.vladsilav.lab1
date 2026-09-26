@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  gap: 10px;
+}
+
+/* фон */
+body {
+  background-color: #2e1a47;
+  color: #e0d9f5;
+  font-family: Arial, sans-serif;
+}
+
+/* цвет заголовков */
+h1, h2 {
+  color: #39ff14;
+}
+
+/* рамка и отступы для секций и боковой панели */
+section, aside {
+  border: 1px solid #d946ef;
+  padding: 10px;
+  margin: 10px;
+}
